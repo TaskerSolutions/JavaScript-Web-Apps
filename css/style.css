@@ -1,0 +1,114 @@
+* {	margin: 0px; padding: 0px; box-sizing: border-box;} /* so all browsers display same */
+html {height: 100%;
+	scroll-behavior: smooth;
+}
+p {font-size: 0.7em;}
+.flex { display: flex; }
+.bold {font-weight: bold; }
+img {
+	width: 100%; 
+	height: auto;
+	vertical-align: middle;
+}
+
+
+
+body {
+	background-color: #ffffff;
+	overflow-x: hidden;
+	height: 100%;
+	font-family: 'Varela' , 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-align: center;
+	font-size: 20px;
+	line-height: 1.4;
+}
+
+main {
+	position: relative;
+	display: block;
+	color: #000000;
+	min-height: 100%;
+}
+
+.title-block {
+	user-select: none;
+	position: relative;
+	width: 100%;
+	color: #000000;
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #c0c0c0;
+	box-shadow: 0px 1px 4px 3px #313131;
+	border-top: 1px solid black;
+}
+.title-block h1 { 
+	font-size: 2.8em;
+	margin-bottom: 30px;
+}
+.title-block h2 { 
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+
+.content-wrapper {
+	margin: auto;
+	width: 100%;
+	/*max-width: 1200px;
+	margin-bottom: 100px;*/
+}
+
+.content-container {
+	padding: 40px 15px 40px 15px;
+	background-color: #f1f1f1;
+	box-shadow: 0px 6px 4px 6px #131313;
+}
+
+.heading {
+	padding-top: 65px;
+	padding-bottom: 25px;
+	font-size: 2.3em;
+}
+
+h3 {
+	padding-top: 50px;
+	padding-bottom: 40px;
+	font-size: 1.8em;
+}
+
+.sub-heading {
+	font-weight: bold;
+	padding: 20px 0px 10px;
+	font-size: 1em;
+}
+
+.blurb {
+	font-size: 0.8em;
+	padding: 20px 10px;
+	margin-bottom: 35px;
+	max-width: 800px;
+	margin: auto;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.link-black {
+	color: black;
+	text-decoration: underline;
+}
+
+.privacy-policy {
+	margin-top: 110px;
+	text-align: left;
+	font-size: 0.8em;
+	padding: 25px;
+}
+
+.github-button {
+	margin-top: 40px !important;
+	margin-bottom: 35px !important;
+}

@@ -1,0 +1,131 @@
+header {
+	width: 100vw;
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	height: fit-content;
+	background-color: #333333;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	transition: 0.5s ease-in-out;
+}
+
+.navbar {
+	padding: 0px;
+}
+.navbar:last-child {
+	margin-right: 0px;
+}
+
+
+.nav-up { 
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.header-table {
+	display: table;
+	width: 100%;
+}
+
+.logo-container {
+	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+	vertical-align: middle;
+	float: left;
+	max-width: 70%;
+}
+.logo-container a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.logo {
+	float: left;
+	height: 40px;
+	width: auto;
+	transition: 0.5s ease-in-out;
+}
+
+.logo-text {
+	margin-left: 15px;
+	font-size: 13px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+.custom-toggler.navbar-toggler {
+	border: none;
+	float: right;
+	padding-right: 0px;
+	padding-left: 0px;
+} 
+
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+.header-contact-btn {
+	margin-top: 16px;
+	float: left;
+    width: fit-content;
+	position: relative;
+	border: 1px solid white;
+	font-size: 15px;
+	text-transform: uppercase;
+	
+	border-radius: 3px;
+	padding: 10px 14px;
+	margin-right: 20px;
+	transition: 0.3s;
+}
+.header-contact-btn:hover {
+	background-color: rgb(204, 204, 204);
+	color: black;
+	font-weight: bold;
+	transform: scale(1.1);
+	text-decoration: none;
+}
+
+/* Tooltip text
+.header-contact-btn .tooltiptext {
+	visibility: hidden;
+	background-color: #524c4c;
+	color: #fff;
+	text-align: center;
+	font-size: 0.8em;
+	padding: 5px;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 10;
+
+	min-width: 80px;
+	top: 80%;
+	left: 50%;
+	margin-left: -40px;
+
+	opacity: 0;
+	transition: opacity 1s;
+  }
+  .header-contact-btn:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+  }
+  .header-contact-btn .tooltiptext::after {
+	content: " ";
+	position: absolute;
+	bottom: 100%; 
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent #524c4c transparent;
+  } */

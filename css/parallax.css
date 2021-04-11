@@ -1,0 +1,45 @@
+	/* Create the parallax scrolling effect */
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* This is needed to target ios13 devices that dont support fixed bg*/
+.device-ios {
+	background-attachment: scroll !important;
+}
+
+.title-image {
+	height: 300px;
+	background-image: url(../media/background/background-image.jpg);
+}
+
+.image-break {
+    height: 400px;
+    background-image: url(../media/background/snow.jpg);
+}
+
+.image-break-two {
+    height: 300px;
+    background-image: url(../media/background/hahei-surf.jpg);
+}
+
+.image-break-port {
+    height: 700px;
+    background-image: url(../media/background/snow.jpg);
+}
+
+.text-overlay {
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	text-shadow: 1px 1px rgb(112, 112, 112);
+	padding-top: 80px;
+}
+
+.parallax-text {
+	font-size: 0.9em;
+	padding-top: 20px;
+}
