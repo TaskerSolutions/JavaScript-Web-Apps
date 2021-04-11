@@ -23,25 +23,22 @@
 	<!-- load icons -->
 	<link rel="icon" type="image/png" href="img/logo.png">
 	
-	<link rel="dns-prefetch" href="//fonts.googleapis.com"> <!-- load google fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela">
+	<!-- load google fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
+	<!-- load bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-	<link rel="stylesheet" href="css/style.css?v=2.2">
-	<link rel="stylesheet" href="css/parallax.css?v=2.2">	
-
-	<link rel="stylesheet" href="css/header.css?v=2.2">
-	<link rel="stylesheet" href="css/footer.css?v=2.2">
-
-	<link rel="stylesheet" href="css/button.css?v=2.2">
-
-	<link rel="stylesheet" href="css/mediaqueries.css?v=2.2">
+	<!-- load local CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
 
-<!-- navigation bar -->  
+<!-- bootstrap navigation bar -->  
 <header>
 	<div class="container">
 		<div class="navbar navbar-expand-md navbar-dark">
@@ -49,8 +46,9 @@
 			<div class="logo-container">
 				<a href="http://taskersolutions.com/index.php" class="flex">
 					<img class="logo" src="img/ts_logo_transparent.png" alt="logo">
-					<div class="logo-text">Harry Tasker
-						<br>Website Developer</div>
+				</a>
+				<a href="http://taskersolutions.com/index.php" class="flex">
+					<div class="logo-text">Harry Tasker<br>Website Developer</div>
 				</a>
 			</div>
 			<!-- collapse nav button -->
@@ -62,22 +60,83 @@
 			<div class="collapse navbar-collapse" id="collapsibleNavbar">
 				<ul class="navbar-nav">
 					<li><a href="http://taskersolutions.com/index.php"
-						class="header-contact-btn">Home</a></li>
+						class="header-btn">Home</a></li>
 					<li><a href="http://taskersolutions.com/portfolio.php"
-						class="header-contact-btn">My Portfolio</a></li>  
+						class="header-btn">My Portfolio</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 </header>
 
+<!-- main content -->
 <main>
+	<div class="drum-container">
+		<div class="row">
 
+			<!-- column 1 -->
+			<div class="col-3-sm">
+
+				<div class="all cymbal large" id="crash-cymbal">
+					W<br><span class="type">Crash</span>
+				</div>
+
+				<div class="all cymbal small" id="hi-hat">
+					A/S<br><span class="type">Hi-Hat</span>
+				</div>
+	
+				<div class="all pedal" id="hi-hat-pedal">
+					Q<br><span class="type">Clap</span>
+				</div>
+			</div>
+			
+			<!-- column 2 -->
+			<div class="col-2-sm">
+
+				<div class="all drum small" id="small-tom">
+					J<br><span class="type">Tom</span>
+				</div>
+
+				<div class="all drum medium" id="snare-drum">
+					H<br><span class="type">Snare</span>
+				</div>
+			</div>
+
+			<!-- column 3 -->
+			<div class="col-1-sm">
+
+				<div class="all pedal" id="bass-drum">
+					D<br>E<br><span class="type">Kick</span>
+				</div>
+			</div>
+			
+			<!-- column 4 -->
+			<div class="col-3-sm" style="margin-top: 5vw;">
+
+				<div class="all drum medium" id="medium-tom">
+					K<br><span class="type">Tom</span>
+				</div>
+
+				<div class="all drum large" id="large-tom">
+					L<br><span class="type">Tom</span>
+				</div>
+			</div>
+
+			<!-- column 5 -->
+			<div class="col-3-sm">
+
+				<div class="all cymbal large" id="ride-cymbal">
+					N<br><span class="type">Ride</span>
+				</div>
+
+			</div>
+		</div>
+	</div>
 </main>
 
 <!-- footer -->
 <footer>
-	<div class="copyright">Copyright &copy; 2020 | Tasker Solutions</div>
+	Written by Harry Tasker&nbsp&nbsp|&nbsp&nbsp<a href="http://taskersolutions.com/">Tasker Solutions</a></div>
 </footer>
 
 <!-- Load htmlshiv and Respond.js for old IE versions so HTML5 elements and media queries work  -->
@@ -90,7 +149,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<script src="script/script.js?v=2.2"></script>
+<script src="script/script.js"></script>
 
 </body>
 </html>
