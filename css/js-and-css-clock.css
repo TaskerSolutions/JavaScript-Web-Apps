@@ -1,0 +1,120 @@
+.digital {
+  margin: auto;
+  margin-top: 100px;
+  border: 1px solid black;
+  max-width: 300px;
+  min-height: 50px;
+  box-shadow: #333333 0px 5px 8px;
+  text-align: center;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.clock-body {
+  width:  200px;
+  height: 200px;
+  border: 10px solid rgb(0, 0, 80);
+  border-radius: 300px;
+}
+
+.hand {
+  position: absolute;
+  border-radius: 10px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  background-color: black;
+  transition: 0.1s ease-in-out;
+  transition-timing-function: cubic-bezier(0.1, 2.5, 0.6, 1);
+}
+
+#center {
+  border: 5px solid black;
+  width: 1px;
+  margin-left: 80px;
+  margin-top: 91px;
+}
+
+#second {
+  border: 1px solid black;
+  width: 75px;
+  margin-left: 15px;
+  margin-top: 90px;
+}
+
+#minute {
+  border: 2px solid black;
+  width: 60px;
+  margin-left: 30px;
+  margin-top: 89px;
+}
+
+#hour {
+  border: 3px solid black;
+  width: 45px;
+  margin-left: 45px;
+  margin-top: 88px;
+}
+
+.number {
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 84px;
+}
+
+.one {
+  transform: translate(42px, -68px);
+}
+
+.two {
+  transform: translate(67px, -36px);
+}
+
+.three {
+  transform: translate(80px, 0px);
+}
+
+.four {
+  transform: translate(67px, 36px);
+}
+
+.five {
+  transform: translate(36px, 67px);
+}
+
+.six {
+  transform: translate(0px, 74px);
+}
+
+.seven {
+  transform: translate(-36px, 67px);
+}
+
+.eight {
+  transform: translate(-67px, 36px);
+}
+
+.nine {
+  transform: translate(-74px, 0px);
+}
+
+.ten {
+  transform: translate(-67px, -36px);
+  margin-left: 81px;
+}
+
+.eleven {
+  transform: translate(-42px, -68px);
+  margin-left: 81px;
+}
+
+.twelve {
+  transform: translate(0px, -84px);
+  margin-left: 81px;
+}
