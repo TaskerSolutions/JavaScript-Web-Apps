@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+}
+
+label {
+  font-weight: bold;
+}
