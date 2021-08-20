@@ -1,9 +1,6 @@
 body {
   text-align: center;
-}
-
-.container {
-  max-width: 400px;
+  background-color: rgb(247, 252, 255);
 }
 
 label {
