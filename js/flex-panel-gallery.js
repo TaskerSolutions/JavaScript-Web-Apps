@@ -14,3 +14,8 @@ function toggleActive(event) {
 
 panels.forEach(panel => panel.addEventListener('click', toggleOpen));
 panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+
+// remove open-active class after 1 second to avoid a bug on load
+setTimeout(function() {
+  panels.forEach(panel => panel.classList.remove('open-active'));
+}, 1000);
