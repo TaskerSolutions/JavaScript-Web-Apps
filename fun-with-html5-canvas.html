@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>fun-with-html5-canvas</title>
+  <title>Html5 Canvas Fun</title>
 
   <link rel="icon" type="image/png" href="img/ts_logo.png">
   <!-- bootstrap CSS -->
@@ -14,9 +14,34 @@
 </head>
 <body>
 
-<div class="container-fluid">
-  
-</div>
+  <canvas id="draw" width="800" height="800"></canvas>
+
+  <br><br>
+
+  <div class="row">
+
+    <div class="col-sm-4">
+      <label for="size">Size</label>
+      <input type="range" id="size" name="size" min="1">
+      <br>
+      <label for="random-size">Random Size</label>
+      <input type="checkbox" id="random-size" name="random-size" checked>
+    </div>
+
+    <div class="col-sm-4">
+      <label for="color">Color</label>
+      <input type="color" id="color" name="color">
+      <br>
+      <label for="random-color">Random Color</label>
+      <input type="checkbox" id="random-color" name="random-color" checked>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="btn btn-warning" id="clear-btn">Clear Canvas</div>
+    </div>
+
+  </div>  
+
   
 <!-- bootstrap js -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
