@@ -39,11 +39,8 @@ function draw(event) {
     } else {
       ctx.lineWidth --;
     }
-    if (ctx.lineWidth >= 100) {
-      direction = false
-    } else if (ctx.lineWidth <= 2) {
-      direction = true;
-    }
+    if (ctx.lineWidth >= 100 || ctx.lineWidth <= 2) {
+      direction = !direction;
   }
 
   // * hue, 100% saturation, 50% lightness
