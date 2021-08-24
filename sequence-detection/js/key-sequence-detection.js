@@ -17,7 +17,7 @@ window.addEventListener('keyup', (e) => {
   str = lastSix.join('');
   //console.log(str)
 
-  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  const randomColor = Math.floor( Math.random() *16777215 ).toString(16);
   const randomNumber = Math.floor( Math.random() * 10 ) + 15;
   console.log(randomNumber)
 
