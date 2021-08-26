@@ -1,0 +1,25 @@
+body {
+  background-color: #e8f0ff;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+ul {
+background-color: white;
+  border: 1px solid black;
+  width: 400px;
+  padding: 0;
+  margin: 20px auto;
+}
+
+li {
+  font-weight: bold;
+  padding: 8px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+}
