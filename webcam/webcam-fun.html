@@ -14,8 +14,66 @@
 </head>
 <body>
 
+<!-- 
+@@@@@@@@@@@@@@@@@@@@@  NOTE :  @@@@@@@@@@@@@@@@@@@@@@@@@@
+page must be running on a server for webcam to work
+-->
+
 <div class="container-fluid">
+
+  <div class="photobooth">
+
+    <div class="controls center-container row">
+
+      <div class="col-md-3">
+        <div class="btn btn-primary m-3 p-3" onClick="takePhoto()">Take Photo</div>
+      </div>
+
+      <div class="col-md-6">
+        <h3>Green Screen Controls:</h3>
+        <br><br><br>
+        <div class="rgb">
+          <label for="rmin">Red Min:</label>
+          <input type="range" min=0 max=255 name="rmin">
+          <label for="rmax">Red Max:</label>
+          <input type="range" min=0 max=255 name="rmax">
+
+          <br>
+
+          <label for="gmin">Green Min:</label>
+          <input type="range" min=0 max=255 name="gmin">
+          <label for="gmax">Green Max:</label>
+          <input type="range" min=0 max=255 name="gmax">
+
+          <br>
+
+          <label for="bmin">Blue Min:</label>
+          <input type="range" min=0 max=255 name="bmin">
+          <label for="bmax">Blue Max:</label>
+          <input type="range" min=0 max=255 name="bmax">  
+        </div>     
+      </div>
+
+      <div class="col-md-3" style="flex-direction: column;">
+        <label for="alpha">Frame Drag:</label>
+        <input type="range" min=1 max=10 value=10 name="alpha" id="alpha">
+      </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="center-container">
+      <canvas class="photo"></canvas>
+    </div>
   
+    <video class="player" hidden></video>
+
+    <div class="strip"></div>
+
+  </div>
+
+  <audio class="snap" src="./snap.mp3" hidden></audio>
 </div>
   
 <!-- bootstrap js -->
