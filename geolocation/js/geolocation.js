@@ -31,7 +31,11 @@ if (navigator && navigator.geolocation) {
       }
      map_container = document.getElementById('map');
      var map = new google.maps.Map(map_container, map_options);
-     console.log(map)
+
+    /*var mapUrl = 'https://maps.googleapis.com/maps/api/staticmap?center=40.714%2c%20-73.998&zoom=12&size=400x400&key=AIzaSyBuID4F2TON-FI8SGFKcGuC8ST_FYPNWsg'
+    var imgElement = document.getElementById("static-map");
+    imgElement.src = mapUrl;*/
+
   }, 
   // if user does not grant access to geolocation data
   (err) => {
