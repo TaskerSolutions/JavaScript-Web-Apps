@@ -6,8 +6,10 @@ body {
 }
 
 .words {
+  width: 100%;
   max-width: 500px;
-  margin: 50px auto;
+  margin: auto;
+  margin-bottom: 20px;
   background: white;
   border-radius: 5px;
   box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
@@ -16,6 +18,7 @@ body {
   background-size: 100% 3rem;
   position: relative;
   line-height: 3rem;
+  min-height: 20rem;
 }
 
 p {
@@ -31,4 +34,25 @@ p {
   bottom: 0;
   border: 1px solid;
   border-color: transparent #efe4e4;
+}
+
+.sections {
+  /*border-right: 1px solid;*/
+  padding: 50px;
+  outline: 0;
+}
+
+.sections button {
+  border: 0;
+  width: 49%;
+  float: left;
+  margin-bottom: 0;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.sections button:active {
+  top: 2px;
 }

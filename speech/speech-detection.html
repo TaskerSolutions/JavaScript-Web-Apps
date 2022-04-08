@@ -10,15 +10,49 @@
   <link rel="icon" type="image/png" href="img/ts_logo.png">
   <!-- bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/speech-detection.css">
+  <link rel="stylesheet" href="css/speech.css">
 </head>
 <body>
 
 <div class="container-fluid">
-<h3 class="text-center pt-5">Ensure that no other tabs or applications are using your mircophone</h3>
-<p class="text-center pt-5">Try setting the background color using voice recognition</p>
-  <div class="words" contenteditable>
-  </div>
+
+  <div class="row">
+
+    <div class="col-md-6 sections">
+
+      <p class="text-center pt-5">
+        Try setting the background color using voice recognition.
+      </p>
+      <div class="words words-output" contenteditable></div>
+
+    </div>
+
+    <div class="col-md-6 sections">
+
+      <p class="text-center pt-5">Type here to turn it into speech.</p>
+
+      <textarea name="text" class="words words-input"></textarea>
+
+        <select name="voice" id="voices">
+          <option value="">Select A Voice</option>
+        </select>
+        <br>
+        <br>
+        <label for="rate">Speed:</label>
+        <br>
+        <input name="rate" type="range" min="0" max="3" value="1" step="0.1">
+        <br>
+        <label for="pitch">Pitch:</label>
+        <br>
+        <input name="pitch" type="range" min="0" max="3" step="0.1">
+        <br>
+        <br>        
+        <button id="speak">Speak</button>
+
+    </div>
+  
+  </div>  
+  
 </div>
   
 <!-- bootstrap js -->
@@ -26,5 +60,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="js/speech-detection.js"></script>
+<script src="js/speech-synthesis.js"></script>
 </body>
 </html>
