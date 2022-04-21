@@ -7,33 +7,40 @@
   <title>custom-video-player</title>
   	<link rel="icon" type="image/png" href="img/ts_logo.png">
   <link rel="stylesheet" href="css/custom-video-player.css">
+  <link rel="stylesheet" href="css/video-speed-controller.css">
   <!-- Do NOT load bootstrap. Will mess with styles-->
 </head>
 <body>
+  <div class="wrapper">
+    <div class="player">
 
-  <div class="player">
+      <video class="player__video viewer flex" src="video/video.mp4"></video>
 
-    <video class="player__video viewer" src="video/video.mp4"></video>
+      <div class="player__controls">
 
-    <div class="player__controls">
+        <div class="progress">
+          <div class="progress__filled"></div>
+        </div>
 
-      <div class="progress">
-        <div class="progress__filled"></div>
+        <button class="player__button toggle" title="Toggle Play">►</button>
+        <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+        <!--<input type="range" name="playbackRate" class="player__slider" min="0.4" max="4" step="0.2" value="1">-->
+        <button data-skip="-10" class="player__button">« 10s</button>
+        <button data-skip="10" class="player__button">10s »</button>
+        <button class="player__button" id="fullscreen-btn">[|+|]</button>
+
       </div>
-
-      <button class="player__button toggle" title="Toggle Play">►</button>
-      <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
-      <input type="range" name="playbackRate" class="player__slider" min="0.4" max="4" step="0.2" value="1">
-      <button data-skip="-10" class="player__button">« 10s</button>
-      <button data-skip="10" class="player__button">10s »</button>
-      <button class="player__button" id="fullscreen-btn">[|+|]</button>
 
     </div>
 
+    <div class="speed">  
+      <div class="speed-bar">1×</div>
+    </div>
   </div>
   
 <!-- js -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/custom-video-player.js"></script>
+<script src="js/video-speed-controller.js"></script>
 </body>
 </html>
