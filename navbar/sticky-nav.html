@@ -11,22 +11,95 @@
   <!-- bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/sticky-nav.css">
+  <link rel="stylesheet" href="css/follow-along-dropdown.css">
 </head>
 <body>
+  
 
  <header>
-    <h1>A story about getting lost.</h1>
+    <h1>Scroll down.<br>
+    Hover over nav items.</h1>
   </header>
+  
+  
 
-  <nav id="main">
-    <ul>
-      <li class="logo"><a href="#">LOST.</a></li>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Images</a></li>
-      <li><a href="#">Locations</a></li>
-      <li><a href="#">Maps</a></li>
+  <nav id="main" class="top">
+  
+  <div class="dropdown-background">
+      <span class="arrow"></span>
+    </div>
+
+    <ul class="top-list">
+
+      <li>
+        <a href="#">Home</a>
+        <div class="dropdown dropdown2">
+          <img src="img/ts_logo_transparent.png" width="60" height="60" alt="logo">
+          <p>This is an example paragraph. This is an example paragraph. This is an example paragraph.</p>
+        </div>
+      </li>
+
+      <li>
+        <a href="#">About</a>
+        <ul class="dropdown dropdown3">
+          <li>
+            <a href="#">Link 1</a>          
+          </li>
+          <li>
+            <a href="#">Link 2</a>          
+          </li>
+          <li>
+            <a href="#">Link 3</a>          
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Images</a>
+        <ul class="dropdown dropdown4">
+          <li>
+            <a href="#">Link number 4</a>          
+          </li>
+          <li>
+            <a href="#">Link 5</a>          
+          </li>
+          <li>
+            <a href="#">Link number 6</a>          
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Locations</a>
+        <ul class="dropdown dropdown5">
+          <li>
+            <a href="#">This is link 7</a>          
+          </li>
+          <li>
+            <a href="#">This is link 8</a>          
+          </li>
+          <li>
+            <a href="#">I'm link 9</a>          
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Maps</a>
+        <ul class="dropdown dropdown6">
+          <li>
+            <a href="#">Link 10</a>          
+          </li>
+          <li>
+            <a href="#">Link No 11</a>          
+          </li>
+          <li>
+            <a href="#">Link #12</a>          
+          </li>
+        </ul>
+      </li>
     </ul>
+
   </nav>
 
   <div class="site-wrap">
@@ -55,5 +128,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="js/sticky-nav.js"></script>
+<script src="js/follow-along-dropdown.js"></script>
 </body>
 </html>

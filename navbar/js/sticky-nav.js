@@ -1,6 +1,6 @@
 const nav = document.querySelector('#main');
 
-const topOfNav = nav.offsetTop;
+let topOfNav = nav.offsetTop;
 
 
 
